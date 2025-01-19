@@ -85,7 +85,14 @@ export default function ChatComponent() {
                                 </svg>
 
                                 <div className="input-area">
-                                    <input type="text" id="inputField" placeholder="Type a message..." onChange={(e) => setUserMessage(e.target.value)} value={userMessage} autoComplete="off" />
+                                    <input type="text" id="inputField" placeholder="Type a message..." onChange={(e) => setUserMessage(e.target.value)} value={userMessage} autoComplete="off" style={{ paddingLeft: '10px' }}/>
+                                    {/* <textarea
+        id="inputField"
+        placeholder="Type a message..."
+        onChange={(e) => setUserMessage(e.target.value)}
+        value={userMessage}
+        style={{ width: '100%', minHeight: '50px' }}  // Adjust width and minHeight as needed
+    ></textarea> */}
                                     <button id="submitButton" onClick={() => handleSend()} >Send</button>
                                 </div>
                             </div>

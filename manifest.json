@@ -6,7 +6,8 @@
     "permissions": ["storage", "activeTab", "scripting"],
     "content_scripts": [
         {
-            "matches": ["https://arcteryx.com/ca/en/cart","https://www.amazon.ca/gp/cart/view.html?ref_=nav_cart", "https://www.aritzia.com/en/cart"],
+            "matches": ["https://arcteryx.com/ca/en/cart","https://www.amazon.ca/gp/cart/view.html?ref_=nav_cart", "https://www.aritzia.com/en/cart", "https://www.adidas.ca/en/cart", "https://www.nike.com/ca/cart", 
+            "https://www.sephora.com/basket", "https://www.newbalance.ca/en_ca/cart/", "https://shop.lululemon.com/en-ca/shop/mybag", "https://www.zara.com/ca/en/shop/cart", "https://www.ugg.com/ca/cart/", "https://www.bestbuy.ca/en-ca/basket#"],
             "js": ["./src/scripts/ChatOverlay.tsx"]
         }
     ],
